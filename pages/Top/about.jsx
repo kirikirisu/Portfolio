@@ -88,7 +88,7 @@ const CircleContent = ({ title, elements, description }) => (
   <BaseCircle>
     <ContentTitle>{title}</ContentTitle>
     <CharWrapper>
-      {elements && elements.map((key) => <Char>{key}</Char>)}
+      {elements && elements.map((key) => <Char key={key}>{key}</Char>)}
       {description && <Char>{description}</Char>}
     </CharWrapper>
   </BaseCircle>
