@@ -3,43 +3,28 @@ import styled from "styled-components";
 import { Title, Head } from "./index";
 
 const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-transform: rotate(5deg) translate3d(0, 0, 0);
+  background: rgba(247, 247, 247);
+  margin-left: -25%;
+  padding: 0 25%;
   position: relative;
-  overflow: hidden;
-  padding: 30vh;
-  ::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 120vw;
-    height: 80%;
-    margin: 3% -10% 0;
-    background-color: rgba(250, 248, 233);
-    -webkit-transform-origin: left center;
-    -ms-transform-origin: left center;
-    transform-origin: left center;
-    -webkit-transform: rotate(3deg);
-    -ms-transform: rotate(3deg);
-    transform: rotate(3deg);
-    z-index: -1;
-  }
+  transform: rotate(5deg) translate3d(0, 0, 0);
+  width: 150%;
+  overflow-x: hidden;
 `;
 
 const Content = styled.div`
-  box-sizing: boder-box;
-  background-color: yellow;
+  background: red;
+  -webkit-transform: rotate(-5deg) translate3d(0, 0, 0);
+  color: #fff;
+  max-width: 100vw;
+  transform: rotate(-5deg) translate3d(0, 0, 0);
 `;
 
-const Description = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+const Description = styled.p`
+  color: black;
+  height: 50vh;
+  weight: 50vw;
 `;
 
 const Circle = styled.div`
@@ -53,14 +38,9 @@ const Circle = styled.div`
 
 const About = () => (
   <Wrapper>
-    <Head theme={{ size: "3.5vh" }}>ABOUT</Head>
-    <Description>
-      <Circle>name</Circle>
-      <Circle>あだ名</Circle>
-      <Circle>好きな食べ物</Circle>
-      <Circle>好きなゲーム</Circle>
-      <Circle>趣味</Circle>
-    </Description>
+    <Content>
+      <Description>hogeghegoeh</Description>
+    </Content>
   </Wrapper>
 );
 
