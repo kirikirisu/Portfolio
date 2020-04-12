@@ -29,20 +29,27 @@ export const Head = styled.p`
   font-weight: bolder;
 `;
 
-export const Title = styled.p`
+const Title = styled.p`
   margin: 0;
   padding: 0;
-  font-size: ${({ theme }) => theme.size};
+  font-size: 2vh;
   color: grey;
   text-align: center;
   letter-spacing: 0.1vh;
+`;
+
+export const ContentTitle = styled(Title)`
+  color: rgba(45, 45, 45);
+  font-size: 2.3vh;
+  padding: 1vh;
+  text-decoration: underline;
 `;
 
 const Top = () => (
   <Wrapper>
     <Main>
       <Head theme={{ size: "4.5vh" }}>Arakappa</Head>
-      <Title theme={{ size: "2vh" }}>きのこ派だ！！</Title>
+      <Title>きのこ派だ！！</Title>
     </Main>
     <About />
   </Wrapper>
